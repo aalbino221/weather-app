@@ -1,0 +1,123 @@
+@font-face {
+    font-family: "Inter";
+    src: url(./assets/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+* {box-sizing: border-box;}
+
+:root {
+    font-family:'Inter' ,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --darkBlue: rgb(4, 21, 37);
+    font-size: 22px;
+}
+
+html, body {height: 100%;
+    width: 100%;}
+
+p {margin: 0;}
+
+body {background: url(./assets/cloudy.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top 400px;
+    margin: 0;
+    display: flex;
+    justify-content: center;}
+
+.main {height: 60vh;
+    width: 30vw;
+    min-width: 400px;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: white;
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;}
+
+.main>div {flex-grow: 1;}
+
+.main-info, .extra-info {display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;}
+
+.main-info {gap: 0.5rem;
+    justify-content: center;}
+
+.search {display: flex;
+    width: 90%;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+    margin-right: 5%;
+    }
+
+.city-name {font-size: 2rem;}
+
+.city-temp>p {font-size: 3rem;}
+
+.city-clouds {display: flex;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+    align-items: center;}
+
+.city-temp {position: relative;}
+
+#change-mode {position: absolute;
+    left: -1.5rem;
+    height: 1.3rem;
+    width: 1.3rem;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 0.8rem;
+    border: 0;}
+
+#change-mode:hover {cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: 0.2s all ease-in-out;}
+
+button:hover {cursor: pointer;}
+
+input {height: 1.8rem;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 0;
+    border-radius: 2px;
+    color: white;
+    border-top: 2px solid rgba(0, 0, 0, 0);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.0);
+    text-align: center;}
+
+input::placeholder {color: rgba(255, 255, 255, 0.75);}
+
+input:focus {outline: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.75);
+    transition: 0.2s all ease-in-out;}
+
+#search-city{background-color: rgba(240, 248, 255, 0);
+    height: 1.8rem;
+    border: 0;
+    font-size: 1.1rem;
+    color: white;
+    margin-left: 0.2rem;}
+
+.extra-info {width: 100%;
+    align-items: flex-start;
+    gap: 0.2rem;}
+
+.extra {display: flex;
+    align-items: center;}
+
+#error {position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.7rem;}
+
+.input-div {width: 80%;
+    position: relative;}
