@@ -4,7 +4,7 @@ function changeAllUnits() {
   const tempNumber = Number(temp.dataset.tempcelsius);
   const feelsLike = document.querySelector('.extra-temp');
   const feelsNumber = Number(feelsLike.dataset.feelscelsius);
-  if (currentUnit.textContent === 'F') {
+  if (currentUnit.textContent === 'Fº') {
     temp.textContent = `${((tempNumber * 1.8) + 32).toFixed(1)}º`;
     feelsLike.textContent = `Feels like: ${((feelsNumber * 1.8) + 32).toFixed(1)}º`;
   } else {
@@ -15,10 +15,10 @@ function changeAllUnits() {
 
 function changeSelectedUnit() {
   const currentUnit = document.querySelector('#change-mode');
-  if (currentUnit.textContent === 'C') {
-    currentUnit.textContent = 'F';
+  if (currentUnit.textContent === 'Cº') {
+    currentUnit.textContent = 'Fº';
   } else {
-    currentUnit.textContent = 'C';
+    currentUnit.textContent = 'Cº';
   }
   changeAllUnits();
 }

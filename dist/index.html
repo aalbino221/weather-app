@@ -11,29 +11,37 @@
 
   <div class="main">
     <div class="search">
+        <div class="input-div">
         <input type="text" id="input-city" placeholder="City">
+        <span id="error"></span>
+        </div>
         <button id="search-city"><i class="fa-solid fa-magnifying-glass"></i></button>
     </div>
 
     <div class="main-info">
       <p class="city-name">Paulínia, SP</p>
       <div class="city-temp">
-        <button id="change-mode">C</button>
-        <p class="temp">18.5º</p>
+        <button id="change-mode">Cº</button>
+        <p class="temp" data-tempcelsius="18.5">18.5º</p>
       </div>
       <div class="city-clouds">
-        <p class="clouds-now">Overcast Clouds <i class="fa-solid fa-cloud"></i></p>
+        <p class="clouds-now">Overcast clouds</p>
+        <img src="http://openweathermap.org/img/w/04n.png" alt="" id="icon">
       </div>
     </div>
 
     <div class="extra">
     <div class="extra-info">
-      <div class="extra-temp">Feels like: 20.1º</p></div>
+      <div class="extra-temp" data-feelscelsius="20.1">Feels like: 20.1º</p></div>
       <p class="extra-humidity">Humidity: 50%</p>
       <p class="extra-wind">Wind: 8 km/h</p>
-      <p class="extra-pressure">Pressure: 1200 bar</p>
+      <p class="extra-pressure">Pressure: 1200 hPa</p>
     </div>
     </div>
+  </div>
+  <div class="footer">
+      <p class="footer-cont"> 2022 @ <i class="fa-brands fa-github"></i> aalbino221
+      </p>
   </div>
 
 </body>
