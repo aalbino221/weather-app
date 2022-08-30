@@ -5,8 +5,10 @@ function changeAllUnits() {
   const feelsLike = document.querySelector('.extra-temp');
   const feelsNumber = Number(feelsLike.dataset.feelscelsius);
   if (currentUnit.textContent === 'Fº') {
-    temp.textContent = `${((tempNumber * 1.8) + 32).toFixed(1)}º`;
-    feelsLike.textContent = `Feels like: ${((feelsNumber * 1.8) + 32).toFixed(1)}º`;
+    temp.textContent = `${(tempNumber * 1.8 + 32).toFixed(1)}º`;
+    feelsLike.textContent = `Feels like: ${(feelsNumber * 1.8 + 32).toFixed(
+      1,
+    )}º`;
   } else {
     temp.textContent = `${tempNumber.toFixed(1)}º`;
     feelsLike.textContent = `Feels like: ${feelsNumber.toFixed(1)}º`;
